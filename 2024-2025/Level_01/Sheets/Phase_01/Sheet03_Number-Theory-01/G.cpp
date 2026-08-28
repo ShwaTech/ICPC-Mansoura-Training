@@ -19,7 +19,7 @@ using namespace std;
 const int MAX=1e6+10;
 
 vector<int> SieveOfEratosthenes (int n) {
-    vector<int> smallest_divisor(n+1, true);
+    vector<int> smallest_divisor(n+1);
 
     for (int i = 2; i <= n; i++) {
         smallest_divisor[i] = i;
